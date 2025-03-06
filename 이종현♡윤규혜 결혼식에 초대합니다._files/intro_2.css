@@ -1,0 +1,28 @@
+#intro_2 { top: 0; left: 0; width: 100%;  z-index: 12;
+  background: rgb(255,255,255);
+background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(244,223,223,1) 48%, rgba(232,190,190,1) 100%);
+}
+#intro_2 .theme_gra {position: absolute; top:0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,1) 100%); padding: 20px; z-index: 12;}
+#intro_2.editor {position: absolute;  height: 700px;}
+#intro_2.card {position: fixed;  height: 100vh; width: 420px; left: 50%; transform: translateX(-50%);}
+#intro_2 .frame {width: 100%; height: 100%; border: 1px solid rgba(255, 255, 255, 0.5); z-index: 13;}
+#intro_2 .inner {width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 14;}
+#intro_2 .title p {color: #c36c6c;}
+#intro_2 .title p:nth-of-type(1) {opacity: 0; transform: translateY(20px); animation: up 1.5s .8s forwards; font-size: 16px;}
+#intro_2 .title p:nth-of-type(2) {opacity: 0; transform: translateY(20px); animation: up 1.5s 1.6s forwards; margin:10px 0; font-size: 13px; color: #d69696;}
+#intro_2 .title p:nth-of-type(3) {opacity: 0; transform: translateY(20px); animation: up 1.5s 2.4s forwards; font-size: 16px;}
+#intro_2 .title span {display: inline-block; vertical-align: middle; color: #c36c6c;}
+#intro_2 p.point {margin:30px 0 0 0; color: #c36c6c; opacity: 0; transform: translateY(20px); animation: up 1s 3.2s forwards;}
+
+@keyframes up {
+  0%{opacity: 0; transform: translateY(20px);}
+  100%{opacity: 1; transform: translateY(0px);}
+}
+@media screen and (max-width:1700px){
+  #intro_2.editor {height: 600px;}
+}
+@media screen and (max-width:767px){
+  #intro_2.card {width:100%;}
+  #intro_2.editor {height: calc(100vh - 60px)}
+}

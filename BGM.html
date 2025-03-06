@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Music</title>
+    <script>
+        function onYouTubeIframeAPIReady() {
+            var player = new YT.Player('bgm', {
+                videoId: 'fDENo0ms660', // YouTube video ID
+                events: {
+                    'onReady': function (event) {
+                        event.target.playVideo();
+                        event.target.setVolume(50); // Adjust volume (0-100)
+                    }
+                },
+                playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    playlist: 'fDENo0ms660', // Needed for looping
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    fs: 0,
+                    disablekb: 1,
+                    rel: 0,
+                    playsinline: 1
+                }
+            });
+        }
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <!-- Hidden YouTube Player -->
+    <div id="bgm" style="display: none;"></div>
+</body>
+</html>

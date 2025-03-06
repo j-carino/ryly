@@ -3,7 +3,7 @@
 #fall .main {position: relative;}
 
 #fall .main .top_txt {padding: 80px 0 40px;}
-#fall .main .top_txt .mini {font-size: 0.75rem; letter-spacing: 8px; margin-bottom: 20px; display: inline-block; width: 100%;}
+#fall .main .top_txt .mini {font-size: 1rem; letter-spacing: 8px; margin-bottom: 20px; display: inline-block; width: 100%;}
 #fall .main .top_txt .main_name span {font-size: 1.125rem;}
 #fall .main img {width: 100%; display: block;}
 #fall .main .bottom_txt {padding: 50px 0;}
